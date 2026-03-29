@@ -53,7 +53,7 @@ cat("Random-effects OR =", round(exp(m$TE.random), 3), "\n")
 cat("95% CI            = [", round(exp(m$lower.random), 3), ";", round(exp(m$upper.random), 3), "]\n")
 cat("Q =", round(m$Q, 3), "\n")
 cat("p-value (Q) =", signif(m$pval.Q, 3), "\n")
-cat("I^2 =", round(m$I2, 1), "%\n")
+cat("I^2 =", round(100 * m$I2, 1), "%\n")
 cat("tau^2 =", round(m$tau2, 3), "\n")
 
 cat("\n=== metafor ===\n")
